@@ -1,0 +1,156 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e0b57a76641cf242aaf87456e83e1362",
+    "packages": [
+        {
+            "name": "setasign/eval/setapdf-core/ioncube",
+            "version": "1.0.2264816",
+            "dist": {
+                "type": "zip",
+                "url": "https://www.setasign.com/downloads/eval/54918/ioncube/SetaPDF-Core-License.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "setasign/eval/setapdf-core/ioncube/php7.1",
+            "version": "2.31.0.1330",
+            "dist": {
+                "type": "zip",
+                "url": "https://www.setasign.com/downloads/2221239/SetaPDF-Core_2.31.0.1330_Ioncubed-PHP7.1-without-demos.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "setasign/eval/setapdf-core/ioncube": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SetaPDF_": "library/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "support": {
+                "email": "support@setasign.com"
+            },
+            "time": "2019-04-04T00:00:00+00:00"
+        },
+        {
+            "name": "setasign/eval/setapdf-merger/ioncube",
+            "version": "1.0.2264816",
+            "dist": {
+                "type": "zip",
+                "url": "https://www.setasign.com/downloads/eval/10656/ioncube/SetaPDF-Merger-License.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "license": [
+                "proprietary"
+            ]
+        },
+        {
+            "name": "setasign/eval/setapdf-merger/ioncube/php7.1",
+            "version": "2.31.0.1330",
+            "dist": {
+                "type": "zip",
+                "url": "https://www.setasign.com/downloads/2221259/SetaPDF-Merger_2.31.0.1330_Ioncubed-PHP7.1-without-demos.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "setasign/eval/setapdf-merger/ioncube": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SetaPDF_": "library/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "support": {
+                "email": "support@setasign.com"
+            },
+            "time": "2019-04-04T00:00:00+00:00"
+        },
+        {
+            "name": "setasign/setafpdf",
+            "version": "dev-evaluation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Setasign/SetaFPDF.git",
+                "reference": "cfc13d565d9ca74c7461280b385739c22ce9c026"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Setasign/SetaFPDF/zipball/cfc13d565d9ca74c7461280b385739c22ce9c026",
+                "reference": "cfc13d565d9ca74c7461280b385739c22ce9c026",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": "^7.1",
+                "setasign/eval/setapdf-core/ioncube/php7.1": "^2.29"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7",
+                "setasign/fpdf": "1.8.1",
+                "setasign/fpdi-fpdf": "^2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "setasign\\SetaFpdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Setasign",
+                    "email": "support@setasign.com"
+                }
+            ],
+            "description": "SetaFPDF is a clone of FPDF with an almost compatible interface while using SetaPDF-Core internally for the PDF generation.",
+            "homepage": "https://www.setasign.com",
+            "keywords": [
+                "SetaFPDF",
+                "SetaPDF",
+                "fpdf",
+                "pdf"
+            ],
+            "time": "2019-05-18T08:30:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "setasign/setafpdf": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.1.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-fileinfo": "*"
+    },
+    "platform-dev": []
+}
