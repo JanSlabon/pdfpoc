@@ -78,7 +78,7 @@ class BoardPacket
             /** @var array $attachedDoc */
             foreach ($this->documents[$index] as $attachedDoc) {
                 $fileItem = SetaPDF_Core_Document_OutlinesItem::create($document, $attachedDoc['title']);
-                $outlineItem->appendChild($fileItem);
+                $item->appendChild($fileItem);
             }
         }
 
