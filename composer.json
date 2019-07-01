@@ -12,9 +12,8 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-simplexml": "*",
-        "setasign/eval/setapdf-core/ioncube/php7.1": "2.31.0.1330",
-        "setasign/eval/setapdf-merger/ioncube/php7.1": "2.31.0.1330",
-        "setasign/setafpdf": "dev-evaluation"
+        "setasign/setapdf-merger": "2.31.0.1330",
+        "setasign/setafpdf": "^v1.0.0beta2"
     },
     "autoload": {
         "psr-4": {
