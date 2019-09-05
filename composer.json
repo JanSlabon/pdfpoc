@@ -12,16 +12,13 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-simplexml": "*",
-        "setasign/setapdf-merger": "2.31.0.1330",
+        "setasign/setapdf-merger": "2.32.0.1371",
         "setasign/setafpdf": "^v1.0.0beta2"
     },
     "autoload": {
         "psr-4": {
             "Src\\": "src/"
-        },
-		"psr-0": {
-			"SetaPDF_": "hotfix/"
-		}
+        }
     },
     "repositories": [
         {

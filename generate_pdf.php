@@ -26,55 +26,35 @@ class BoardPacket
     public function __invoke()
     {
         $this->tableOfContents = [
-            0 => ['title' => 'Agenda', 'children' => [1, 2, 5, 6, 17, 22]],
-            1 => ['title' => 'CALL TO ORDER, PLEDGES, PRAYER, WELCOME', 'children' => []],
-            2 => ['title' => 'PROGRESS MONITORING', 'children' => [3, 4]],
-            3 => ['title' => 'Goal Progress Measure 1.1 - The percentage of 3rd grade students at or above grade level of comprehension and fluency will increase from 28% to 45% by 2021. 2019 - 35% 2020 - 40% 2021 - 50%', 'children' => []],
-            4 => ['title' => 'Superintendent Evaluation of Goal Progress Measure 1.1', 'children' => []],
-            5 => ['title' => 'PUBLIC COMMENT', 'children' => []],
-            6 => ['title' => 'CONSENT AGENDA', 'children' => [7, 8, 9, 10, 11, 12, 13, 14, 15, 16]],
-            7 => ['title' => 'Consider and approve minutes from May 13th Regular Meeting (TGC 551.021)', 'children' => []],
-            8 => ['title' => 'Consider and approve the May 2019 Board\'s Time Use Tracker (LSG)', 'children' => []],
-            9 => ['title' => 'Consider and approve May Board\'s Staff Use Tracker (LSG)', 'children' => []],
-            10 => ['title' => 'Consider and approve donations for the Celebrate the Blue Way ceremony', 'children' => []],
-            11 => ['title' => 'Consider and approve Garza/Bomberger Natalia MS Wing Replacement Invoice #2', 'children' => []],
-            12 => ['title' => 'Consider and approve Performance Services invoice #3', 'children' => []],
-            13 => ['title' => 'Consider and approve Performance Services Invoice #4', 'children' => []],
-            14 => ['title' => 'Consider and approve property value report 120 days of budget approval.', 'children' => []],
-            15 => ['title' => 'Consider and Approve Monthly Financial Reports', 'children' => []],
-            16 => ['title' => 'Consider and approve 2019-2020 Budget Amendment', 'children' => []],
-            17 => ['title' => 'DISCUSSION', 'children' => [18, 19, 20, 21]],
-            18 => ['title' => 'Consider and approve adherence to Board Constraint 3.0 - Do not deviate from Natalia ISD Board Policy or Natalia ISD Board Operating Procedures such as negotiating financial compensation with district employees.', 'children' => []],
-            19 => ['title' => 'Report on 2019-2020 Student Performance Data', 'children' => []],
-            20 => ['title' => 'Report on Student Safety and SB 11', 'children' => []],
-            21 => ['title' => 'Budget Workshop', 'children' => []],
-            22 => ['title' => 'ADJOURN', 'children' => []],
+            0 => ['title' => 'Agenda', 'children' => [1, 6, 9, 10, 13, 14, 15, 16]],
+            1 => ['title' => 'Section I', 'children' => [2]],
+            2 => ['title' => 'Nested Section I.1', 'children' => [3, 4, 5]],
+            3 => ['title' => 'Nested Section I.1.a', 'children' => []],
+            4 => ['title' => 'Nested Section I.1.b', 'children' => []],
+            5 => ['title' => 'Nested Section I.1.c', 'children' => []],
+            6 => ['title' => 'Nested Section I.2', 'children' => [7, 8]],
+            7 => ['title' => 'Nested Section I.2.a', 'children' => []],
+            8 => ['title' => 'Nested Section I.2.b', 'children' => []],
+            9 => ['title' => 'Nested Section I.3', 'children' => []],
+            10 => ['title' => 'Nested Section I.4', 'children' => [11, 12]],
+            11 => ['title' => 'Nested Section I.4.a', 'children' => []],
+            12 => ['title' => 'Nested Section I.4.b', 'children' => []],
+            13 => ['title' => 'Section II', 'children' => []],
+            14 => ['title' => 'Section III', 'children' => []],
+            15 => ['title' => 'Section IV', 'children' => []],
+            16 => ['title' => 'Section V', 'children' => []],
         ];
 
         $this->documents = [
-            3 => [
+            1 => [
                 0 => ['title' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf', 'id' => 5, 'filename' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf'],
             ],
-            7 => [
+            2 => [
                 0 => ['title' => '6LLkKP8HRcu10JpDqvrN-44479652.pdf', 'id' => 6, 'filename' => '6LLkKP8HRcu10JpDqvrN-44479652.pdf'],
                 1 => ['title' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf', 'id' => 3, 'filename' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf'],
-                2 => ['title' => 'TpVWxkKbTCyt2OLLtHxV-44588801.pdf', 'id' => 8, 'filename' => 'TpVWxkKbTCyt2OLLtHxV-44588801.pdf'],
-                3 => ['title' => '7O41edsOSmOFhCX2fQ2g-44605776.pdf', 'id' => 7, 'filename' => '7O41edsOSmOFhCX2fQ2g-44605776.pdf'],
             ],
-            8 => [
+            4 => [
                 0 => ['title' => '7O41edsOSmOFhCX2fQ2g-44605776.pdf', 'id' => 7, 'filename' => '7O41edsOSmOFhCX2fQ2g-44605776.pdf'],
-            ],
-            9 => [
-                0 => ['title' => 'TpVWxkKbTCyt2OLLtHxV-44588801.pdf', 'id' => 8, 'filename' => 'TpVWxkKbTCyt2OLLtHxV-44588801.pdf'],
-            ],
-            10 => [
-                0 => ['title' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf', 'id' => 3, 'filename' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf'],
-            ],
-            20 => [
-                0 => ['title' => '6LLkKP8HRcu10JpDqvrN-44479652.pdf', 'id' => 6, 'filename' => '6LLkKP8HRcu10JpDqvrN-44479652.pdf'],
-                1 => ['title' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf', 'id' => 3, 'filename' => '3xiX27gQcKdHqhhGXKqO-44616797.pdf'],
-                2 => ['title' => 'TpVWxkKbTCyt2OLLtHxV-44588801.pdf', 'id' => 8, 'filename' => 'TpVWxkKbTCyt2OLLtHxV-44588801.pdf'],
-                3 => ['title' => '7O41edsOSmOFhCX2fQ2g-44605776.pdf', 'id' => 7, 'filename' => '7O41edsOSmOFhCX2fQ2g-44605776.pdf'],
             ],
         ];
 
@@ -124,10 +104,22 @@ class BoardPacket
 
         $outlines = $document->getCatalog()->getOutlines();
 
+        // Setup the Agenda outline item
+        $item = SetaPDF_Core_Document_OutlinesItem::create($document, 'Agenda');
+
+        // Hard coded to page 1, if we ever have cover page, will need to change the number or make it dynamic
+        $destination = SetaPDF_Core_Document_Destination::createByPageNo($document, 1);
+        $item->setDestination($destination);
+        $outlines->appendChild($item);
+
         // Create a merger instance on this document. This is used to merge the attached files
         $merger = new SetaPDF_Merger($document);
 
-        $this->buildTableOfContents(0, $outlines, $document, $merger); // Start with the main Agenda
+        // Loop through the main root agenda items and create the table of contents
+        /** @var int $child */
+        foreach ($this->tableOfContents[0]['children'] as $child) {
+            $this->buildTableOfContents($child, $outlines, $document, $merger);
+        }
 
         // merge them together
         try {
@@ -149,7 +141,15 @@ class BoardPacket
         $document->save()->finish();
     }
 
-    private function buildTableOfContents($index, $outlineItem, $document, $merger): void
+    /**
+     * Builds the table of contents outline
+     *
+     * @param  int  $index
+     * @param  \SetaPDF_Core_Document_OutlinesItem|\SetaPDF_Core_Document_Catalog_Outlines  $outlineItem
+     * @param  \SetaPDF_Core_Document  $document
+     * @param  \SetaPDF_Merger  $merger
+     */
+    private function buildTableOfContents($index, $outlineItem, SetaPDF_Core_Document $document, $merger): void
     {
         $item = SetaPDF_Core_Document_OutlinesItem::create($document, $this->tableOfContents[$index]['title']);
         $outlineItem->appendChild($item);
@@ -160,9 +160,6 @@ class BoardPacket
             foreach ($this->documents[$index] as $attachedDoc) {
                 $merger->addFile([
                     'filename' => __DIR__ . '/files/' . $attachedDoc['filename'],
-                    'nameConfig' => [
-                        SetaPDF_Merger::DESTINATION_NAME => 'doc-' . $attachedDoc['id'],
-                    ],
                     'outlinesConfig' => [
                         SetaPDF_Merger::OUTLINES_TITLE => $attachedDoc['title'],
                         SetaPDF_Merger::OUTLINES_PARENT => $item,
