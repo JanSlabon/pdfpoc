@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed4e3d5dd3387ded4a8ccc4bff401e15",
+    "content-hash": "067db57bdb49a96380221d5708e271e3",
     "packages": [
         {
             "name": "setasign/setafpdf",
@@ -58,12 +58,10 @@
         },
         {
             "name": "setasign/setapdf-core",
-            "version": "2.31.0.1330",
+            "version": "2.32.0.1371",
             "dist": {
                 "type": "zip",
-                "url": "https://www.setasign.com/downloads/2221236/SetaPDF-Core_2.31.0.1330-without-demos.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://www.setasign.com/downloads/2298773/SetaPDF-Core_2.32.0.1371-without-demos.zip"
             },
             "type": "library",
             "autoload": {
@@ -77,19 +75,17 @@
             "support": {
                 "email": "support@setasign.com"
             },
-            "time": "2019-04-04T00:00:00+00:00"
+            "time": "2019-08-27T00:00:00+00:00"
         },
         {
             "name": "setasign/setapdf-merger",
-            "version": "2.31.0.1330",
+            "version": "2.32.0.1371",
             "dist": {
                 "type": "zip",
-                "url": "https://www.setasign.com/downloads/2221256/SetaPDF-Merger_2.31.0.1330-without-core.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://www.setasign.com/downloads/2298793/SetaPDF-Merger_2.32.0.1371-without-core.zip"
             },
             "require": {
-                "setasign/setapdf-core": "2.31.0.1330"
+                "setasign/setapdf-core": "2.32.0.1371"
             },
             "type": "library",
             "autoload": {
@@ -103,7 +99,7 @@
             "support": {
                 "email": "support@setasign.com"
             },
-            "time": "2019-04-04T00:00:00+00:00"
+            "time": "2019-08-27T00:00:00+00:00"
         }
     ],
     "packages-dev": [],
