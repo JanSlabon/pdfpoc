@@ -154,18 +154,21 @@ class BoardPacket
         $item = SetaPDF_Core_Document_OutlinesItem::create($document, $this->tableOfContents[$index]['title']);
         $outlineItem->appendChild($item);
 
-        // If the agenda item has documents attached to it, display them in the table of contents
+            // If the agenda item has documents attached to it, display them in the table of contents
         if (isset($this->documents[$index])) {
             /** @var array $attachedDoc */
             foreach ($this->documents[$index] as $attachedDoc) {
                 $merger->addFile([
                     'filename' => __DIR__ . '/files/' . $attachedDoc['filename'],
-                    'outlinesConfig' => [
-                        SetaPDF_Merger::OUTLINES_TITLE => $attachedDoc['title'],
-                        SetaPDF_Merger::OUTLINES_PARENT => $item,
-                        SetaPDF_Merger::OUTLINES_COPY => SetaPDF_Merger::COPY_OUTLINES_AS_CHILDS,
-                    ],
+                    'nameConfig' => [SetaPDF_Merger::DESTINATION_NAME => 'doc-' . $index]
                 ]);
+
+                $subItem = SetaPDF_Core_Document_OutlinesItem::create($document, $attachedDoc['title']);
+                $subItem->setAction(new SetaPDF_Core_Document_Action_GoTo('doc-' . $index));
+                $item->appendChild($subItem);
+
+                $subDocument = $merger->getDocumentByFilename(__DIR__ . '/files/' . $attachedDoc['filename']);
+                $subItem->appendChildCopy($subDocument->getCatalog()->getOutlines(), $document);
             }
         }
 

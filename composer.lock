@@ -61,7 +61,9 @@
             "version": "2.32.0.1371",
             "dist": {
                 "type": "zip",
-                "url": "https://www.setasign.com/downloads/2298773/SetaPDF-Core_2.32.0.1371-without-demos.zip"
+                "url": "https://www.setasign.com/downloads/2298773/SetaPDF-Core_2.32.0.1371-without-demos.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "library",
             "autoload": {
@@ -82,7 +84,9 @@
             "version": "2.32.0.1371",
             "dist": {
                 "type": "zip",
-                "url": "https://www.setasign.com/downloads/2298793/SetaPDF-Merger_2.32.0.1371-without-core.zip"
+                "url": "https://www.setasign.com/downloads/2298793/SetaPDF-Merger_2.32.0.1371-without-core.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "setasign/setapdf-core": "2.32.0.1371"
